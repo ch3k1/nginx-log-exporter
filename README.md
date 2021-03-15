@@ -22,11 +22,11 @@ docker exec -d nginx-exporter python3 exporter.py -m get_nginx_total_requests
 ## Methods
 
 ```
-get_nginx_total_requests,
-get_nginx_total_requests_200,
-get_nginx_total_requests_2xx,
-get_nginx_total_requests_404,
-get_nginx_total_requests_4xx,
-get_nginx_total_requests_500,
+get_nginx_total_requests
+get_nginx_total_requests_200
+get_nginx_total_requests_2xx
+get_nginx_total_requests_404
+get_nginx_total_requests_4xx
+get_nginx_total_requests_500
 get_nginx_total_requests_5xx
 ```
