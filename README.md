@@ -1,6 +1,8 @@
+Reads an Nginx log file to get total requests by status code and exports metrics to Prometheus.
+
 ## Installation ##
 
-### Docker ###
+## Docker ##
 
 ```
 docker build . -t nginx-exporter
@@ -10,7 +12,6 @@ docker build . -t nginx-exporter
 docker run -p 8080:80 -p 8000:8000 --name nginx-exporter -d nginx-exporter
 ```
 
-
 ### Usage
 
 #### Run the exporter
@@ -18,6 +19,20 @@ docker run -p 8080:80 -p 8000:8000 --name nginx-exporter -d nginx-exporter
 ```
 docker exec -d nginx-exporter python3 exporter.py -m get_nginx_total_requests
 ``` 
+
+## Manual installation ##
+
+```
+pip install -r requirements.txt
+```
+
+### Usage
+
+#### Run the exporter
+
+```
+python3 exporter.py -m get_nginx_total_requests
+```
 
 ## Methods
 
