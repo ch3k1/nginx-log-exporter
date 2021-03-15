@@ -19,6 +19,7 @@ ENV LANG en_US.utf8
 
 COPY . .
 RUN pip install -r requirements.txt
+COPY nginx/nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80 8000
 
 STOPSIGNAL SIGTERM
