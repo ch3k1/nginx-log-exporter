@@ -45,3 +45,9 @@ get_nginx_total_requests_4xx
 get_nginx_total_requests_500
 get_nginx_total_requests_5xx
 ```
+
+## Supported Python Versions
+
+```
+2.7.x and greater
+```
